@@ -1,0 +1,222 @@
+{
+    "products": [
+      {
+        "product_id": "LAP123",
+        "product_title": "Dell XPS 13",
+        "product_image": "https://i.ibb.co.com/k8z3fx7/IMG-4090.jpg",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "High-performance laptop with a stunning display.",
+        "specification": ["13.4-inch FHD+", "Intel i7", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "LAP124",
+        "product_title": "MacBook Pro 16",
+        "product_image": "https://i.ibb.co.com/ydFnWRx/0227-QDT3x-Ywn3x-EOpyi-Jp-NU-13.webp",
+        "category": "Laptops",
+        "price": 2500,
+        "description": "Apple's flagship laptop with the M2 chip.",
+        "specification": ["16-inch Liquid Retina XDR", "Apple M2 Pro", "16GB RAM", "1TB SSD"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "LAP125",
+        "product_title": "HP Spectre x360",
+        "product_image": "https://i.ibb.co.com/N6W4j6z/hp-spectre-x360-16-2024-front-angled-e1708549092407.webp",
+        "category": "Laptops",
+        "price": 1400,
+        "description": "2-in-1 convertible laptop with great versatility.",
+        "specification": ["13.5-inch OLED", "Intel i7", "16GB RAM", "1TB SSD"],
+        "availability": false,
+        "rating": 4.7
+      },
+      {
+        "product_id": "PHN123",
+        "product_title": "Samsung Galaxy S23",
+        "product_image": "https://i.ibb.co.com/pbyDYNd/Samsung-Galaxy-S23-Plus-Official-Image.jpg",
+        "category": "Phones",
+        "price": 999,
+        "description": "Flagship smartphone with cutting-edge technology.",
+        "specification": ["6.1-inch AMOLED", "Snapdragon 8 Gen 2", "8GB RAM", "128GB Storage"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "PHN124",
+        "product_title": "iPhone 14 Pro",
+        "product_image": "https://i.ibb.co.com/4mn67Zn/images-1.jpg",
+        "category": "Phones",
+        "price": 1099,
+        "description": "Apple's premium smartphone with Dynamic Island.",
+        "specification": ["6.1-inch Super Retina XDR", "A16 Bionic", "6GB RAM", "256GB Storage"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "PHN125",
+        "product_title": "Google Pixel 8",
+        "product_image": "https://i.ibb.co.com/cJPDn7K/500-333.jpg",
+        "category": "Phones",
+        "price": 899,
+        "description": "AI-powered smartphone with advanced camera capabilities.",
+        "specification": ["6.3-inch OLED", "Google Tensor G3", "8GB RAM", "128GB Storage"],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "ACC123",
+        "product_title": "Anker PowerCore 10000",
+        "product_image": "https://i.ibb.co.com/vBrhGK0/6142te88v-DL-AC-SL1500.jpg",
+        "category": "Accessories",
+        "price": 30,
+        "description": "Compact portable charger for on-the-go charging.",
+        "specification": ["10,000mAh", "USB-A and USB-C ports", "Fast Charging"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "ACC124",
+        "product_title": "Logitech MX Master 3S",
+        "product_image": "https://i.ibb.co.com/BwWRxxn/Logitech-MX-Master-3-S-Review-8.webp",
+        "category": "Accessories",
+        "price": 100,
+        "description": "High-precision wireless mouse with advanced features.",
+        "specification": ["Bluetooth and USB", "4000 DPI sensor", "Customizable buttons"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "ACC125",
+        "product_title": "Samsung T7 SSD",
+        "product_image": "https://i.ibb.co.com/F8ccbX0/images-2.jpg",
+        "category": "Accessories",
+        "price": 150,
+        "description": "High-speed portable SSD for secure data storage.",
+        "specification": ["500GB", "USB-C", "AES 256-bit encryption"],
+        "availability": false,
+        "rating": 4.8
+      },
+      {
+        "product_id": "SW123",
+        "product_title": "Apple Watch Series 9",
+        "product_image": "https://i.ibb.co.com/HnwyMLX/Apple-Watch-Series9-Mainapps.jpg",
+        "category": "Smart Watches",
+        "price": 399,
+        "description": "Advanced smartwatch with health and fitness features.",
+        "specification": ["Always-On Retina Display", "Blood Oxygen Sensor", "GPS"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "SW124",
+        "product_title": "Samsung Galaxy Watch 6",
+        "product_image": "https://i.ibb.co.com/pvrdkXF/galaxy-watch6-safety-mo.webp",
+        "category": "Smart Watches",
+        "price": 350,
+        "description": "Stylish smartwatch with comprehensive health tracking.",
+        "specification": ["AMOLED Display", "Body Composition Monitor", "Sleep Tracking"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "SW125",
+        "product_title": "Fitbit Sense 2",
+        "product_image": "https://i.ibb.co.com/QQTyjPw/images-3.jpg",
+        "category": "Smart Watches",
+        "price": 299,
+        "description": "Smartwatch with stress and health monitoring features.",
+        "specification": ["EDA Sensor", "Heart Rate Monitor", "6-day Battery Life"],
+        "availability": true,
+        "rating": 4.6
+      },
+      {
+        "product_id": "MB123",
+        "product_title": "MacBook Air M2",
+        "product_image": "https://i.ibb.co.com/3hVgh7S/Zaan37-XJE8v-RHb-A8w-Pjhs5.jpg",
+        "category": "MacBooks",
+        "price": 1200,
+        "description": "Lightweight and powerful MacBook with the M2 chip.",
+        "specification": ["13.6-inch Liquid Retina", "Apple M2", "8GB RAM", "256GB SSD"],
+        "availability": true,
+        "rating": 4.8
+      },
+      {
+        "product_id": "MB124",
+        "product_title": "MacBook Pro 14",
+        "product_image": "https://i.ibb.co.com/xmhSnqm/u0-QOu-ZKn3omvgi-IQRdvt-VYsalir-Pwd1wrx99-N5-TV1w.webp",
+        "category": "MacBooks",
+        "price": 2000,
+        "description": "Professional-grade laptop with unparalleled performance.",
+        "specification": ["14-inch Liquid Retina XDR", "Apple M2 Pro", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "MB125",
+        "product_title": "MacBook Pro 16 M1 Max",
+        "product_image": "https://i.ibb.co.com/wdLNnwK/images-4.jpg",
+        "category": "MacBooks",
+        "price": 3200,
+        "description": "Top-tier MacBook for professionals and creatives.",
+        "specification": ["16-inch Retina Display", "Apple M1 Max", "32GB RAM", "1TB SSD"],
+        "availability": false,
+        "rating": 4.9
+      }
+      ,
+      {
+        "product_id": "iphone_001",
+        "product_title": "iPhone 13 Pro Max",
+        "product_image": "https://i.ibb.co.com/xDRd4Cx/g-ZLpfn-Eqo9a-F4-Lu-LQekc3j.jpg",
+        "category": "iPhones",
+        "price": 1099,
+        "description": "Experience the ultimate in smartphone performance with the iPhone 13 Pro Max.",
+        "Specification": [
+          "6.7-inch Super Retina XDR display",
+          "A15 Bionic chip",
+          "ProMotion technology with adaptive refresh rates up to 120Hz",
+          "Triple 12MP camera system with LiDAR scanner",
+          "Up to 1TB storage"
+        ],
+        "availability": true,
+        "rating": 4.9
+      },
+      {
+        "product_id": "iphone_002",
+        "product_title": "iPhone 14",
+        "product_image": "https://i.ibb.co.com/Yb2nx8R/images-5.jpg",
+        "category": "iPhones",
+        "price": 899,
+        "description": "The iPhone 14 offers incredible power and style at an affordable price.",
+        "Specification": [
+          "6.1-inch Super Retina XDR display",
+          "A15 Bionic chip",
+          "Improved dual-camera system",
+          "Ceramic Shield front cover",
+          "Available in 5 stunning colors"
+        ],
+        "availability": true,
+        "rating": 4.7
+      },
+      {
+        "product_id": "iphone_003",
+        "product_title": "iPhone SE (3rd Gen)",
+        "product_image": "https://i.ibb.co.com/Nr11h0h/iphone-se-3rd-gen-512gb-in-gold-finish-what-a-journey-more-v0-10ynvbfnvxdb1.webp",
+        "category": "iPhones",
+        "price": 429,
+        "description": "Compact and powerful, the iPhone SE (3rd Gen) delivers great value.",
+        "Specification": [
+          "4.7-inch Retina HD display",
+          "A15 Bionic chip",
+          "Single 12MP wide camera",
+          "Touch ID for secure authentication",
+          "5G capable"
+        ],
+        "availability": true,
+        "rating": 4.5
+      }
+    ]
+  }
+  
