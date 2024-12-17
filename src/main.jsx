@@ -4,7 +4,7 @@ import './index.css';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Root from './components/Root';
 import Homepage from './components/Homepage';
-import ProductDetails from './components/ProductDetails'; // Import the ProductDetails component
+import ProductDetails from './components/ProductDetails';
 import AllProducts from './components/AllProducts';
 import Laptops from './components/Laptops';
 import Accessories from './components/Accessories';
@@ -19,6 +19,8 @@ import Rot from './components/Rot';
 import R from './components/R';
 import Stat from './components/Stat';
 import { CartProvider } from './components/provider/CartProvider';
+import TitleWrapper from './components/TitleWrapper';
+ // Import the new TitleWrapper
 
 const router = createBrowserRouter([
   {
@@ -27,41 +29,73 @@ const router = createBrowserRouter([
     children: [
       {
         path: "/",
-        element: <Homepage />,
+        element: (
+          <TitleWrapper title="Gadgets | Gadget Heaven">
+            <Homepage />
+          </TitleWrapper>
+        ),
         children: [
           {
             path: '',
-            element: <AllProducts />,
+            element: (
+              <TitleWrapper title="All Products | Gadget Heaven">
+                <AllProducts />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
           {
             path: "laptops",
-            element: <Laptops />,
+            element: (
+              <TitleWrapper title="Laptops | Gadget Heaven">
+                <Laptops />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
           {
             path: "phones",
-            element: <Phones />,
+            element: (
+              <TitleWrapper title="Phones | Gadget Heaven">
+                <Phones />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
           {
             path: "accessories",
-            element: <Accessories />,
+            element: (
+              <TitleWrapper title="Accessories | Gadget Heaven">
+                <Accessories />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
           {
             path: "watches",
-            element: <Watches />,
+            element: (
+              <TitleWrapper title="Watches | Gadget Heaven">
+                <Watches />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
           {
             path: "macbooks",
-            element: <MacBooks />,
+            element: (
+              <TitleWrapper title="MacBooks | Gadget Heaven">
+                <MacBooks />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
           {
             path: "iphones",
-            element: <IPhones />,
+            element: (
+              <TitleWrapper title="iPhones | Gadget Heaven">
+                <IPhones />
+              </TitleWrapper>
+            ),
             loader: () => fetch('/products.json').then((res) => res.json())
           },
         ]
@@ -73,45 +107,56 @@ const router = createBrowserRouter([
     element: <Rooot />,
     children: [
       {
-        // Remove the leading slash from this path
-        path: "product/:productId", 
-        element: <ProductDetails />,
+        path: "product/:productId",
+        element: (
+          <TitleWrapper title="Product Details | Gadget Heaven">
+            <ProductDetails />
+          </TitleWrapper>
+        ),
         loader: async ({ params }) => {
           const response = await fetch('/products.json');
-          const data = await response.json(); // Now 'data' contains the entire object, including the 'products' array.
-          
+          const data = await response.json();
+
           if (!Array.isArray(data.products)) {
             throw new Error("Products data is not an array");
           }
-          
+
           const product = data.products.find(p => p.product_id === params.productId);
-          
+
           if (!product) {
             throw new Error("Product not found");
           }
-          
-          return product;  // Return the found product
+
+          return product;
         }
       }
     ]
   },
   {
-    path:'/rot',
-    element:<Rot></Rot>,
-    children:[
+    path: '/rot',
+    element: <Rot />,
+    children: [
       {
-        path:'/rot/dash',
-        element:<Dashboard></Dashboard>
+        path: '/rot/dash',
+        element: (
+          <TitleWrapper title="Dashboard | Gadget Heaven">
+            <Dashboard />
+          </TitleWrapper>
+        )
       }
     ]
   },
   {
-    path:'/r',
-    element:<R></R>,
-    children:[
+    path: '/r',
+    element: <R />,
+    children: [
       {
-        path:'/r/stat',
-        element:<Stat></Stat>
+        path: '/r/stat',
+        element: (
+          <TitleWrapper title="Statistics | Gadget Heaven">
+            <Stat />
+          </TitleWrapper>
+        )
       }
     ]
   }
