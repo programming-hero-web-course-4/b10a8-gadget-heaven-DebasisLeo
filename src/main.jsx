@@ -20,6 +20,7 @@ import R from './components/R';
 import Stat from './components/Stat';
 import { CartProvider } from './components/provider/CartProvider';
 import TitleWrapper from './components/TitleWrapper';
+import AboutUs from './components/AboutUs';
  // Import the new TitleWrapper
 
 const router = createBrowserRouter([
@@ -141,6 +142,13 @@ const router = createBrowserRouter([
         element: (
           <TitleWrapper title="Dashboard | Gadget Heaven">
             <Dashboard />
+          </TitleWrapper>
+        )
+      },{
+        path: '/rot/about',
+        element: (
+          <TitleWrapper title="AboutUs | Gadget Heaven">
+            <AboutUs></AboutUs>
           </TitleWrapper>
         )
       }

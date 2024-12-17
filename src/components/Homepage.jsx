@@ -13,12 +13,12 @@ const Homepage = () => {
           Explore the latest gadgets that will take your experience to the next level. <br />
           From smart devices to the coolest accessories, we have it all!
         </p>
-        <button className="mt-6 px-8 py-3 bg-white text-purple-500 text-lg md:text-xl font-bold rounded hover:bg-purple-100 transition">
+        <button className="mt-6 px-8 py-3 rounded-lg bg-white text-purple-500 text-lg md:text-xl font-bold  hover:bg-purple-100 transition">
           Shop Now
         </button>
         <div className="absolute -bottom-32 w-full flex justify-center md:-bottom-48">
           <img
-            className="w-3/4 md:w-1/2 h-auto bg-[#FFFFFF4D] p-3 rounded-lg"
+            className="w-3/4 md:w-1/2 h-auto border-2 border-white bg-[#FFFFFF4D] p-3 rounded-lg"
             src={banner}
             alt="Tech Accessories Banner"
           />

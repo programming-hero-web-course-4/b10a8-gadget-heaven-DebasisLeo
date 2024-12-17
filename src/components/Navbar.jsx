@@ -46,6 +46,18 @@ const Navbar = () => {
           Dashboard
         </NavLink>
       </li>
+      <li>
+        <NavLink
+          to="/rot/about"
+          className={({ isActive }) =>
+            isActive
+              ? `${isHomepage ? 'text-white' : 'text-purple-600'} font-semibold`
+              : `${isHomepage ? 'text-gray-200' : 'text-gray-800'} hover:text-purple-600 transition`
+          }
+        >
+          About US
+        </NavLink>
+      </li>
     </>
   );
 
