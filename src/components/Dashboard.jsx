@@ -3,39 +3,38 @@ import { useNavigate } from 'react-router-dom';
 import { useCart } from './provider/CartProvider';
 
 const Dashboard = () => {
-  const { cart, setCart, wishlist, setWishlist } = useCart(); // Added setWishlist
-  const [activeTab, setActiveTab] = useState('cart'); // State for active tab
-  const [sortedCart, setSortedCart] = useState([]); // State for sorted cart items
-  const [isModalOpen, setIsModalOpen] = useState(false); // Modal state
-  const navigate = useNavigate(); // Navigation hook
+  const { cart, setCart, wishlist, setWishlist } = useCart(); 
+  const [activeTab, setActiveTab] = useState('cart'); 
+  const [sortedCart, setSortedCart] = useState([]); 
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const navigate = useNavigate();
 
-  // Sort cart items by price in descending order
   const handleSortByPrice = () => {
     const sorted = [...sortedCart].sort((a, b) => b.price - a.price);
     setSortedCart(sorted);
   };
 
-  // Handle purchase button click
+  
   const handlePurchase = () => {
-    setCart([]); // Clear the cart
-    setSortedCart([]); // Clear the sorted cart
-    setIsModalOpen(true); // Open the modal
+    setCart([]); 
+    setSortedCart([]);
+    setIsModalOpen(true); 
   };
 
-  // Handle modal close
+ 
   const handleCloseModal = () => {
-    setIsModalOpen(false); // Close the modal
-    navigate('/'); // Redirect to the home page
+    setIsModalOpen(false); 
+    navigate('/'); 
   };
 
   useEffect(() => {
-    setSortedCart([...cart]);  // Update sortedCart when cart changes
+    setSortedCart([...cart]); 
   }, [cart]);
   
 
   const totalCost = sortedCart.reduce((acc, item) => acc + item.price, 0).toFixed(2);
 
-  // Render items for both cart and wishlist
+
   const renderItems = (items, isCart) => {
     return items.map((item, index) => (
       <div key={index} className="p-4 border-b flex items-center space-x-4">
@@ -54,15 +53,15 @@ const Dashboard = () => {
     ));
   };
 
-  // Handle item deletion for cart and wishlist
+
   const handleDeleteItem = (item, isCart) => {
     if (isCart) {
-      // Remove item from cart
+    
       const updatedCart = cart.filter((cartItem) => cartItem.id !== item.id);
-      setCart(updatedCart); // Update cart state
-      setSortedCart(updatedCart); // Also update sortedCart state
+      setCart(updatedCart);
+      setSortedCart(updatedCart); 
     } else {
-      // Remove item from wishlist
+      
       setWishlist(prevWishlist => prevWishlist.filter((wishlistItem) => wishlistItem.id !== item.id));
     }
   };
@@ -95,7 +94,7 @@ const Dashboard = () => {
       {/* Main Content */}
       <div className="mt-6 max-w-screen-lg mx-auto">
         {activeTab === 'cart' ? (
-          // Cart Tab Content
+         
           <div>
             <div className="flex justify-between items-center mb-8">
               <h3 className="text-3xl font-semibold text-gray-800">Cart</h3>

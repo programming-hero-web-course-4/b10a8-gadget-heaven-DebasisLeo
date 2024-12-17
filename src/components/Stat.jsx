@@ -4,11 +4,11 @@ import { ComposedChart, Area, Bar, Scatter, XAxis, YAxis, CartesianGrid, Tooltip
 const Statistics = () => {
   const [data, setData] = useState([]);
 
-  // Fetch JSON data
+  
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch('/products.json'); // Adjust the path as per your project setup
+        const response = await fetch('/products.json'); 
         const result = await response.json();
         const formattedData = result.products.map(product => ({
           productName: product.product_title,

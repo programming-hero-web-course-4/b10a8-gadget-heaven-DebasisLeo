@@ -5,7 +5,7 @@ const TitleWrapper = ({ title, children }) => {
     document.title = title;
   }, [title]);
 
-  return children; // Render the child components
+  return children; 
 };
 
 export default TitleWrapper;

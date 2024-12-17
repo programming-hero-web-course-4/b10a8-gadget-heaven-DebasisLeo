@@ -21,12 +21,14 @@ import Stat from './components/Stat';
 import { CartProvider } from './components/provider/CartProvider';
 import TitleWrapper from './components/TitleWrapper';
 import AboutUs from './components/AboutUs';
- // Import the new TitleWrapper
+import NotFoundPage from './components/NotFoundPage';
+
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
+    errorElement:<NotFoundPage></NotFoundPage>,
     children: [
       {
         path: "/",
